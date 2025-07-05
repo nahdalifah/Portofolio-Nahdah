@@ -43,11 +43,19 @@
       font-weight: 700;
       border-radius: 0;
     }
+
+    .hamburger {
+      font-size: 24px;
+      background: none;
+      border: none;
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(40px);
       transition: all 0.6s ease;
     }
+
     .reveal.active {
       opacity: 1;
       transform: translateY(0);
@@ -151,9 +159,10 @@
 <body>
 
   <nav>
-    <div class="d-flex flex-column align-items-center w-100">
-      <button class="hamburger d-md-none mb-2" id="hamburger">&#9776;</button>
-      <ul class="nav flex-column flex-md-row menu justify-content-center" id="menu">
+    <div class="container-fluid position-relative d-flex justify-content-center align-items-center">
+      <button class="hamburger d-md-none position-absolute end-0" id="hamburger">&#9776;</button>
+
+      <ul class="nav flex-column flex-md-row menu" id="menu">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
         <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
@@ -371,11 +380,11 @@
 
   <script>
     const hamburger = document.getElementById('hamburger');
-      const menu = document.getElementById('menu');
+    const menu = document.getElementById('menu');
 
-      hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-      });
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
  </script>
 
   <script>
