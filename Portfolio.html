@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nahdah Alifah Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: linear-gradient(to bottom, #fff1f2, #ffffff);
+      color: #374151; /* gray-800 */
+      margin: 0;
+    }
+    nav {
+      background-color: white; /* navbar putih */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav .nav-link {
+      color: #dc2626;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0; /* hilangkan rounded */
+      transition: all 0.3s ease;
+    }
+    nav .nav-link:hover {
+      color: #991b1b;
+      text-decoration: none;
+    }
+    nav .nav-link.active {
+      color: #7f1d1d;
+      background-color: transparent;
+      font-weight: 700;
+      border-radius: 0;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .btn-rounded {
+      border-radius: 9999px;
+    }
+
+    section {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      box-sizing: border-box;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    #about {
+      background-color: #ffffff;
+    }
+    @media (min-width: 768px) {
+      section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      section {
+        padding-left: 6rem;
+        padding-right: 6rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
+
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    .social-link {
+      text-decoration: none !important;
+      transition: color 0.3s ease;
+    }
+    .social-link:hover,
+    .social-link:focus {
+      color: #991b1b !important;
+      text-decoration: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+      <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-5 py-md-16 reveal">
+    <div class="row align-items-center gx-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fs-4 fw-medium">Welcome!</h2>
+        <h1 class="display-4 fw-bold mt-2">
+          I'm <span class="text-danger">Nahdah Alifah</span>
+        </h1>
+        <p class="fs-5 mt-2">A freelance UI/UX and front-end developer</p>
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <a href="https://drive.google.com/file/d/12f6e0iWjzVxPjGbLu9ZpU8xdT4HEXoEb/view" target="_blank" class="btn btn-danger btn-rounded px-4 py-2">
+            Download CV
+          </a>
+          <a href="https://drive.google.com/file/d/1c3HOu0q9cQM4CGfmayrYUYof0klLr_wu/view" target="_blank" class="btn btn-outline-danger btn-rounded px-4 py-2">
+            Download Portfolio
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+        <div class="position-relative" style="width: 18rem; height: 18rem;">
+          <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-danger" style="width: 14rem; height: 14rem; z-index: 0;"></div>
+          <img src="Asset/casual kemeja hitam.png" alt="Nahdah Alifah" class="position-relative img-fluid" style="z-index: 1; max-height: 18rem; object-fit: contain;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 py-md-16 reveal">
+    <h2 class="text-center fw-bold mb-5 fs-3">About Me</h2>
+    <div class="row align-items-center gx-5">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="Asset/fotoqpng.png" alt="Nahdah" class="rounded-circle border border-danger" style="width: 13rem;" />
+      </div>
+      <div class="col-md-8">
+        <h3 class="text-danger fw-bold fs-4">State University of Surabaya</h3>
+        <p class="text-danger fw-medium mb-3">2023 - Present</p>
+        <p class="fs-6 lh-lg">
+          I have worked on over 7 projects across various domains of information systems and digital product development.
+          My experiences span database design, web development, business process modeling, UI/UX design, CRM, DSS, supply chain management, HR systems, and system testing.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-5 gx-5">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <h4 class="d-inline-block bg-danger text-white px-4 py-2 rounded-pill fw-medium">Tools</h4>
+        <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+          <img src="Asset/Logo Sheet.png" alt="Google Sheets" style="width: 2.5rem;" />
+          <img src="Asset/Logo Figma.png" alt="Figma" style="width: 2.5rem;" />
+          <img src="Asset/Logo Drawio.png" alt="Draw.io" style="width: 2.5rem;" />
+          <img src="Asset/Logo Capcut.png" alt="Capcut" style="width: 2.5rem;" />
+          <img src="Asset/Logo Canva.png" alt="Canva" style="width: 2.5rem;" />
+          <img src="Asset/Logo Csharp.png" alt="C#" style="width: 2.5rem;" />
+          <img src="Asset/Logo Affinity Design.png" alt="Affinity Design" style="width: 2.5rem;" />
+          <img src="Asset/Logo Access.png" alt="Access" style="width: 2.5rem;" />
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <h4 class="d-inline-block bg-danger text-white px-4 py-2 rounded-pill fw-medium">Soft Skills</h4>
+        <ul class="list-unstyled mt-3 fs-6 lh-lg">
+          <li>Teamwork</li>
+          <li>Problem Solving</li>
+          <li>Public Speaking</li>
+          <li>Communicative</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="Project" class="py-5 py-md-12 reveal">
+    <h2 class="text-center fw-bold mb-5 fs-3">My Projects</h2>
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/Joblitz.png" class="card-img-top" alt="JOBLITZ" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">JOBLITZ</h5>
+            <p class="card-text text-muted small">
+              This UI website was developed collaboratively with my team as the final
+              project for the Human Resource Management course. The goal was to assist HR Managers in streamlining and
+              increasing transparency in the recruitment process. In this project, I contributed as an UI Designer,
+              creating both low-fidelity and high-fidelity designs, and presented the final outcome to our lecturer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/HearMate.png" class="card-img-top" alt="HearMate" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">HearMate</h5>
+            <p class="card-text text-muted small">
+              Hearmate is an inclusive mobile application designed to support the Deaf
+              and hard-of-hearing community in daily communication and accessibility. The app offers features that
+              bridge communication gaps, aiming to create a more inclusive environment for everyone. This project was
+              developed collaboratively as part of a team submission for a design competition. I contributed as both a
+              UX researcher and UI designer, conducting user research to understand the needs of the target users and
+              designing intuitive, accessible interfaces through low- and high-fidelity prototypes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/FindU.png" class="card-img-top" alt="FindYou" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">FindYou</h5>
+            <p class="card-text text-muted small">
+              FindYou (Financial Designed for You) is a personal finance application
+              designed to help young people better manage their finances. The app focuses on making budgeting, expense
+              tracking, and financial goal-setting more accessible and relatable for the younger generation. This was
+              an individual project, where I handled the entire UX and UI design process—from user research and problem
+              identification to wireframing and creating high-fidelity prototypes. The goal was to build a solution
+              that is both visually appealing and functionally effective for users new to financial management.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/MuseumGO.png" class="card-img-top" alt="MuseumGO" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">MuseumGO</h5>
+            <p class="card-text text-muted small">
+              MuseumGO is a smartphone application designed to help visitors access
+              information about museum collections and exhibits. It also allows users to purchase tickets for
+              museum-hosted events. This project was created by my team and me for the UI/UX Design Competition. In this
+              project, I was responsible for designing the user interface (UI), including the creation of both
+              low-fidelity and high-fidelity prototypes to ensure a smooth and user-friendly experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/Sainster.png" class="card-img-top" alt="Sainster" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">Sainster</h5>
+            <p class="card-text text-muted small">
+              Sainster (Sains Master) is an educational mobile application aimed at
+              helping elementary school students develop an interest in science through interactive features such as
+              quiz-based games, learning materials, and augmented reality (AR). This project was developed by my team
+              and me for the UI/UX Design Competition. In this project, I was responsible for designing the user
+              interface (UI) and planning the overall user experience (UX), including the creation of low-fidelity and
+              high-fidelity prototypes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Asset/SIPA.png" class="card-img-top" alt="Cermati" style="height: 12rem; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title text-danger">SIPA</h5>
+            <p class="card-text text-muted small">
+              SIPA (Sistem Informasi PPDB Al-Fattah), or the Al-Fattah PPDB Information
+              System, is a web-based system designed to assist admission officers in managing and selecting prospective
+              students more efficiently. This project was developed collaboratively with my team as the final project
+              for the System Analysis and Design course. My role in this project included contributing to the UI design
+              and participating in system planning and documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" class="py-5 py-md-12 text-center reveal">
+  <h2 class="fw-bold mb-4 fs-3">Contact Me</h2>
+  <p class="mb-4 fs-5">Feel free to connect with me on social media:</p>
+
+  <div class="d-flex justify-content-center gap-4 flex-wrap fs-4">
+    <!-- Email -->
+    <a href="mailto:alifah.5002@gmail.com" 
+       class="text-danger d-flex align-items-center gap-2 social-link" 
+       style="text-decoration:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span>alifah.5002@gmail.com</span>
+    </a>
+    <!-- Instagram -->
+    <a href="https://instagram.com/nahdalifah" target="_blank" rel="noopener" 
+       class="text-danger d-flex align-items-center gap-2 social-link" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.64 0 5.332.004 4.49.059c-.84.054-1.418.23-1.93.493a3.602 3.602 0 0 0-1.31.845 3.605 3.605 0 0 0-.844 1.312c-.263.51-.44 1.086-.493 1.924C.004 5.33 0 5.64 0 8c0 2.36.004 2.668.059 3.51.054.84.23 1.418.493 1.93a3.601 3.601 0 0 0 .845 1.31 3.603 3.603 0 0 0 1.312.843c.51.263 1.087.44 1.925.493.84.055 1.148.058 3.51.058s2.67-.003 3.51-.058c.84-.054 1.418-.23 1.93-.493a3.6 3.6 0 0 0 1.31-.845 3.6 3.6 0 0 0 .844-1.31c.263-.51.44-1.087.493-1.925.055-.84.058-1.15.058-3.51s-.003-2.67-.058-3.51c-.054-.84-.23-1.418-.493-1.93a3.6 3.6 0 0 0-.845-1.31 3.6 3.6 0 0 0-1.31-.844c-.512-.263-1.09-.44-1.93-.493C10.67.004 10.36 0 8 0zM8 1.44c2.315 0 2.58.008 3.49.05.75.034 1.155.16 1.426.267.345.142.59.312.848.57.258.258.428.503.57.847.107.27.233.676.267 1.425.04.91.05 1.175.05 3.49s-.01 2.58-.05 3.49c-.034.75-.16 1.155-.267 1.426a1.996 1.996 0 0 1-.57.848 1.99 1.99 0 0 1-.847.57c-.27.107-.676.233-1.425.267-.91.04-1.175.05-3.49.05s-2.58-.01-3.49-.05c-.75-.034-1.155-.16-1.426-.267a1.997 1.997 0 0 1-.848-.57 1.993 1.993 0 0 1-.57-.847c-.107-.27-.233-.676-.267-1.425-.04-.91-.05-1.175-.05-3.49s.01-2.58.05-3.49c.034-.75.16-1.155.267-1.426a1.996 1.996 0 0 1 .57-.848 1.997 1.997 0 0 1 .847-.57c.27-.107.676-.233 1.425-.267.91-.04 1.175-.05 3.49-.05z"/>
+        <path d="M8 3.868a4.13 4.13 0 1 0 0 8.261 4.13 4.13 0 0 0 0-8.26zm0 6.81a2.68 2.68 0 1 1 0-5.358 2.68 2.68 0 0 1 0 5.358z"/>
+        <circle cx="12.312" cy="3.688" r="0.962"/>
+      </svg>
+      <span>nahdalifah</span>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/nahdah-af" target="_blank" rel="noopener" 
+       class="text-danger d-flex align-items-center gap-2 social-link" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.324 0 .725 0h14.55c.4 0 .725.513.725 1.146v13.708c0 .633-.324 1.146-.725 1.146H.724C.324 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.208c.837 0 1.358-.554 1.358-1.246-.015-.708-.52-1.245-1.342-1.245-.822 0-1.358.537-1.358 1.245 0 .692.52 1.246 1.327 1.246h.015zm4.908 8.208V9.359c0-.216.015-.432.08-.586.176-.432.577-.879 1.252-.879.883 0 1.236.663 1.236 1.635v4.866h2.401V9.25c0-2.22-1.184-3.252-2.766-3.252-1.28 0-1.845.703-2.165 1.199v.025h-.015a5.54 5.54 0 0 1 .015-.025V6.169H6.542c.03.674 0 7.225 0 7.225h2.4z"/>
+      </svg>
+      <span>Nahdah Alifah Fitriani</span>
+    </a>
+  </div>
+</section>
+
+  <script>
+    // Simple reveal on scroll
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      for (const el of reveals) {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (elementTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      }
+    }
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
